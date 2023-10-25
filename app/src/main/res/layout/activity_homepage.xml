@@ -1,0 +1,27 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:layout_marginTop="100dp"
+        android:textSize="20sp"
+        android:fontFamily="@font/poppinsbold"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/title"/>
+
+    <ImageView
+        android:id="@+id/gambarwelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/welcome"
+        android:layout_below="@id/tvWelcome"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"/>
+
+</RelativeLayout>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginFragment"
+    android:id="@+id/fragmentLogin">
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/Judullogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="100dp"
+            android:textSize="24sp"
+            android:fontFamily="@font/poppinsbold"
+            android:textColor="@color/title"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/Judullogin">
+
+            <EditText
+                android:id="@+id/etUsername"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Username"
+                android:fontFamily="@font/poppinsregular"
+                android:textSize="14sp"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginEnd="28dp"
+                android:background="@drawable/button_shape"
+                android:paddingLeft="32dp"
+                />
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Password"
+                android:textSize="14sp"
+                android:layout_below="@+id/etPhone"
+                android:fontFamily="@font/poppinsregular"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginEnd="28dp"
+                android:inputType="textPassword"
+                android:paddingLeft="32dp"
+                android:background="@drawable/button_shape"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_below="@+id/linear">
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:fontFamily="@font/poppinsregular"
+                android:textSize="10sp"
+                android:layout_weight="0"
+                android:layout_below="@+id/linear"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="30dp"/>
+
+            <TextView
+                android:id="@+id/tvcheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Remember me"
+                android:textSize="10sp"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/poppinsregular"
+                android:textColor="#000000"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/tvForgot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Forgot Password ?"
+                android:textSize="10sp"
+                android:fontFamily="@font/poppinsregular"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/primary"
+                android:layout_marginRight="28dp" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:fontFamily="@font/poppinsbold"
+            android:layout_below="@+id/Judullogin"
+            android:layout_marginTop="370dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginEnd="28dp"
+            android:textColor="@color/abu"
+            android:background="@drawable/register_shape"
+            android:textAllCaps="false"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/btnLogin"
+            android:layout_marginTop="24dp"
+            android:gravity="center_horizontal">
+
+
+            <TextView
+                android:id="@+id/tvAlredy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Member?"
+                android:textSize="14sp"
+                android:fontFamily="@font/poppinsregular"
+                android:layout_below="@+id/btnRegister"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                android:id="@+id/tvRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Register"
+                android:textSize="14sp"
+                android:fontFamily="@font/poppinsregular"
+                android:layout_below="@+id/btnLogin"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/primary"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>
